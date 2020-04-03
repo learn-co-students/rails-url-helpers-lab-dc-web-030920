@@ -1,0 +1,3 @@
+class AddActiveColumnToStudent < ApplicationRecord
+    
+end
