@@ -21,6 +21,7 @@ class StudentsController < ApplicationController
     elsif @student.active == false
       @student.update_attribute(:active, true)
     end
+    redirect_to student_path(@student)
   end
 
   private
