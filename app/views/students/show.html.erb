@@ -1,1 +1,14 @@
 <h1><%= @student.to_s %></h1>
+
+<% if @student.active %>
+    <%= link_to "This student is currently active.", "/students/#{@student.id}/activate" %>
+
+<% else %>
+    <%= link_to "This student is currently inactive.", "/students/#{@student.id}/activate" %> 
+<% end %>
+
+
+
+
+
+
